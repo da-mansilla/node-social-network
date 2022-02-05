@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Social Network</title>
+	<!-- BootStrap-->
+	<link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+	<!-- Font Awasome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!--- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Varela+Round" rel="stylesheet">
+	<!-- Custom Css -->
+
+</head>
+<body style= "background: #dcdde1;
+			font-family: 'Varela Round', sans-serif;">
+	<nav class="navbar navbar-dark bg-dark">
+		<div class="container">
+			<a href="/" class="navbar-brand"> <img src="/public/img/logo.png" align="imgShare" style="width: 70%;"> </a>
+		</div>
+	</nav>
+	<div class="container p-4">
+		<div class="row">
+			<div class="col-md-8">
+				{{{ body }}}
+			</div>
+			<div class="col-md-4">
+				{{> stats }}
+				{{> popular}}
+				{{> comments }}
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="/public/js/scripts.js"></script>
+</body>
+</html>
